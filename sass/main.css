@@ -8,7 +8,6 @@
           box-sizing: inherit;
 }
 
-/* ROOT */
 html {
   font-size: 62.5%;
 }
@@ -23,74 +22,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: antiquewhite;
-}
-
-.header {
-  height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.75)), to(rgba(40, 180, 133, 0.75))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  -webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
-          clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  -webkit-animation-name: moveToRight;
-          animation-name: moveToRight;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  /* 
-    animation-iteration-count: 3;
-    animation-timing-function: ease-in;  start slower 
-    animation-delay: 1s;
-    */
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.7rem;
-  -webkit-animation-name: moveToLeft;
-          animation-name: moveToLeft;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  margin-bottom: 6rem;
 }
 
 .btn:link, .btn:visited {
@@ -154,6 +85,74 @@ body {
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.75)), to(rgba(40, 180, 133, 0.75))), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+          clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.header__logo {
+  height: 5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  /* 
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;  start slower 
+    animation-delay: 1s;
+    */
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.7rem;
+  -webkit-animation-name: moveToLeft;
+          animation-name: moveToLeft;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  margin-bottom: 6rem;
 }
 
 @-webkit-keyframes moveToRight {
