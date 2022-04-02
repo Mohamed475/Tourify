@@ -2,25 +2,14 @@
   max-width: $grid-width;
   margin: 0 auto;
 
-  background-color: blue;
-  color: $color-white;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
 
   @include clearfix;
 
-  // Select all elements attribute start by 'col-'.
-  // ^ start with.
-  // * contain.
-  // $ end with.
   [class^='col-'] {
     float: left;
-    background-color: salmon;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
@@ -54,8 +43,4 @@
       2 * ((100% - #{$gutter-horizontal} * 2) / 3) + #{$gutter-horizontal}
     );
   }
-}
-
-.grid {
-  margin-top: 15rem;
 }

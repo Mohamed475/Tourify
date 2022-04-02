@@ -1,0 +1,39 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    width: 60%;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+    outline-offset: 1.5rem;
+
+    &--pic1 {
+      top: -1rem;
+      left: 8rem;
+    }
+
+    &--pic2 {
+      top: 12rem;
+      left: 1rem;
+    }
+
+    &--pic3 {
+      top: 7rem;
+      left: 40%;
+    }
+
+    &:hover {
+      outline: $color-primary solid 1.5rem;
+      transform: scale(1.06);
+      box-shadow: 0 2.5rem 3.5rem rgba($color-black, 0.3);
+      z-index: 20;
+    }
+  }
+
+  // When the composition is hovered select all photos that not hovered yet and decrese the scale value.
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
