@@ -1,0 +1,23 @@
+.feature {
+  height: 35rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 4.5rem 2rem;
+  background-color: rgba($color-white, 0.8);
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  transition: all 0.2s;
+  border-radius: 0 10% 0 0;
+
+  &__icon-box {
+    margin-bottom: 2rem;
+
+    .icon {
+      max-width: 35%;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.02);
+    box-shadow: 0 3rem 5rem rgba($color-black, 0.3);
+  }
+}

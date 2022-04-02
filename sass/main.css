@@ -16,7 +16,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2rem;
-  background-color: #f7f7f7;
 }
 
 body {
@@ -359,8 +358,37 @@ body {
           transform: scale(0.95);
 }
 
+.feature {
+  height: 35rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 4.5rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 0 10% 0 0;
+}
+
+.feature__icon-box {
+  margin-bottom: 2rem;
+}
+
+.feature__icon-box .icon {
+  max-width: 35%;
+}
+
+.feature:hover {
+  -webkit-transform: translateY(-1rem) scale(1.02);
+          transform: translateY(-1rem) scale(1.02);
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
 .row {
   max-width: 114rem;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -375,6 +403,7 @@ body {
 }
 
 .row [class^='col-'] {
+  height: 100%;
   float: left;
 }
 
@@ -437,6 +466,18 @@ body {
 
 .section-about {
   margin-top: -30vh;
-  padding: 35rem 0 20rem;
+  padding: 35rem 0 30rem;
+  background-color: #f7f7f7;
+}
+
+.section-features {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.75)), to(rgba(40, 180, 133, 0.75))), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 20rem 0;
+  margin-top: -20vh;
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
+          clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0, 50% 20%);
 }
 /*# sourceMappingURL=main.css.map */
