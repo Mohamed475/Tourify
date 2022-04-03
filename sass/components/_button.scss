@@ -33,10 +33,13 @@
     }
   }
 
-  &--animated {
-    animation-name: fadeInUp;
-    animation-duration: 0.7s;
-    animation-fill-mode: both;
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
   }
 
   &::after {
@@ -51,6 +54,12 @@
     z-index: -1;
 
     transition: all 0.3s;
+  }
+
+  &--animated {
+    animation-name: fadeInUp;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
   }
 }
 
